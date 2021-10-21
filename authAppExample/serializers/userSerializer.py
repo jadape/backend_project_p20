@@ -11,6 +11,6 @@ def to_representation(self, obj):
     user = User.objects.get(id = obj.id)
     return {
         'name'     : user.name,
-        'last_name': user.last_name
+        
     }
 

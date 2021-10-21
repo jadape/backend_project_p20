@@ -15,5 +15,5 @@ class ProductSerializer(serializers.ModelSerializer):
             'name'       : product.name,
             'description': product.description,
             'price'      : product.price,
-            'amount'     : product.amount
+            
         }

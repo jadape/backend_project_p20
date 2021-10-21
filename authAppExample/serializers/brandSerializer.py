@@ -11,5 +11,5 @@ class BrandSerializer(serializers.ModelSerializer):
         brand = Brand.objects.get(id = obj.id)
         return {
             'id'   : brand.id,
-            'name' : brand.name
+            
         }
