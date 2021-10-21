@@ -18,5 +18,5 @@ urlpatterns = [
     path('brand/create/',            views.BrandCreateView.as_view()),
     path('brand/update/<int:pk>/',   views.BrandUpdateView.as_view()),
     path('brand/delete/<int:pk>/',   views.BrandDeleteView.as_view()),
-    path('brand/<int:pk>/',      views.BrandDetailView.as_view())
+    path('brand/<int:pk>/',          views.BrandDetailView.as_view())
 ]
