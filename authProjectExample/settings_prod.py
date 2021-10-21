@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hek8^z9ssnh#@*j0orxhvq8&mm1k9lw$bohz0#6nqm0_h@^nk!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -102,11 +102,11 @@ WSGI_APPLICATION = 'authProjectExample.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'proyecto_ciclo_3',
-        'HOST': 'localhost',
+        'NAME': 'daqp9na2s0achm',
+        'HOST': 'ec2-54-236-234-167.compute-1.amazonaws.com',
         'PORT': '5432',
-        'PASSWORD': 'marina2015',
-        'USER': 'postgres'
+        'PASSWORD': '53210fc150be173872c64a927862ff89a35197722051cadda4480390dc37dcd6',
+        'USER': 'rutdaaqroarfld'
     }
 }
 
