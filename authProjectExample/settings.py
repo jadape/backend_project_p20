@@ -43,13 +43,13 @@ INSTALLED_APPS = [
 ]
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKENS': False,
+    'ACCESS_TOKEN_LIFETIME'   : timedelta(minutes=5),
+    'REFRESH_TOKEN_LIFETIME'  : timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS'   : False,
     'BLACKLIST_AFTER_ROTATION': True,
-    'UPDATE_LAST_LOGIN': False,
+    'UPDATE_LAST_LOGIN'       : False,
 
-    'ALGORITHM': 'HS256',
+    'ALGORITHM'    : 'HS256',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
 }
@@ -73,6 +73,7 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = 'authAppExample.User'
 ROOT_URLCONF = 'authProjectExample.urls'
 
 TEMPLATES = [
@@ -99,12 +100,12 @@ WSGI_APPLICATION = 'authProjectExample.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE'  : 'django.db.backends.postgresql_psycopg2',
+        'NAME'    : 'proyecto_ciclo_3',
+        'USER'    : 'postgres',
+        'PASSWORD': 'marina2015',
+        'HOST'    : 'localhost',
+        'PORT'    : '5432',
     }
 }
 
